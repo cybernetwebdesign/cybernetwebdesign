@@ -2,10 +2,10 @@
 // Buzz, a Javascript HTML5 Audio library
 // v 1.0.6
 // Licensed under the MIT license.
-// https://buzz.jaysalvat.com/
+// http://buzz.jaysalvat.com/
 // ----------------------------------------------------------------------------
 // Copyright (C) 2013 Jay Salvat
-// https://jaysalvat.com/
+// http://jaysalvat.com/
 // ----------------------------------------------------------------------------
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files ( the "Software" ), to deal
