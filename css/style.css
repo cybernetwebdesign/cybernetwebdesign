@@ -1,0 +1,531 @@
+    /*
+      
+    Theme Name: Trailer
+    Description: coming soon template for themeforest.net
+    Theme Owner: pixelentity
+    File: Main css file  
+    Design & Development by: Fabio Cairo, Donagh O'Keeffe
+    Web:    https://themeforest.net/user/pixelentity
+			https://pixelentity.com
+            
+    */
+    
+    /*------------------------------------------------------------------------*/
+    
+	/*yellow*/  		/*#ffa903*/
+	/*bluish*/ /*#84ccff*/
+	
+    /* HELPER CLASSES */
+    
+	img{
+		display:block;
+        max-width:100%;
+		height:auto;
+    }
+    
+    .clearfix:after{
+        content: ".";
+        display:block;
+        height:0;
+        visibility:hidden;
+        clear:both;
+    }
+	
+	[class^="icon-"]{
+		background:none;
+		opacity:1;
+	}
+    
+
+    /*------------------------------------------------------------------------*/
+    
+    /* GENERIS STYLES */
+    
+    body
+    {
+        background:#000;
+        text-align: left;
+        color: #888;
+        font-size:12px;
+		font-family: 'Open Sans', arial, sans-serif;
+        font-weight: 400;
+        line-height:20px;
+		overflow-x:hidden;
+		overflow-y:hidden;
+    }
+	
+	h1, h2, h3, h5, h6{
+		font-weight:400;
+		margin-top:0;
+	}
+    
+    h1{
+        color: #464646;
+        font-size:24px;
+		line-height:30px;
+        letter-spacing:-1px;
+		margin-bottom:40px;
+    }
+	
+	h3{
+        color: #eee;
+        font-size:20px;
+		font-weight:600;
+		line-height:30px;
+        letter-spacing:-1px;
+		margin-bottom:20px;
+    }
+    
+    h2{
+        color: #666;
+        font-size:24px;
+        line-height:28px;
+		font-weight:400;
+		margin-top:0;
+		letter-spacing:-1px;
+    }
+
+    
+    h4{
+        font-size:14px;
+        font-weight:600;
+        line-height:14px;
+        color:#eee;
+		text-transform:uppercase;
+		margin-top:10px;
+		margin-bottom:25px;
+    }
+	
+	h5{
+		font-weight:400;
+		margin-bottom:30px;
+		font-size:16px;
+		color:#aaa;
+	}
+	
+	h6{
+		font-weight:300;
+		font-size:12px;
+		text-transform:uppercase;
+		color:#999;
+	}
+    
+    p{
+        color: #888;
+        font-size:12px;
+		font-family: 'Open Sans', arial, sans-serif;
+        font-weight: 400;
+        line-height:20px;
+        margin-bottom:20px;
+    }
+    
+    a{
+        color:#84ccff;
+        text-decoration:none;
+		position:relative;
+    }
+    
+    a:hover{
+        color:#ffffff;
+		text-decoration:none;
+    }
+	
+	span.accent{
+		font-weight:600;
+		color:#fff;
+	}
+    
+    /*remove outline on focus and clicks*/
+    *:focus {outline: none;}
+    
+    a:focus, a:active , input:focus, input:active, input[type=submit]:active, input[type=radio]:active{
+		outline: 0px;
+		-moz-outline-style: none;
+    }
+    
+    /*outline in geko browsers*/
+    button::-moz-focus-inner,
+    input[type="reset"]::-moz-focus-inner,
+    input[type="button"]::-moz-focus-inner,
+    input[type="radio"]::-moz-focus-inner,
+    input[type="submit"]::-moz-focus-inner,
+    input[type="file"] > input[type="button"]::-moz-focus-inner {
+		border: none;
+    }
+    
+    input, button, select, textarea, label {
+		font-family: 'Open Sans', arial, sans-serif;
+		font-weight:400;
+		font-size:12px;
+	}
+    
+    ul{
+        list-style:none;
+        margin:0;
+    }
+    
+    li{
+        padding:0;
+        padding-left:15px;
+        margin-top:8px;
+    }
+    
+	.inner-spacer-left{
+		margin-left:20px;
+	}
+	
+	.inner-spacer-right{
+		margin-right:20px;
+	}
+	
+	.inner-spacer-left-lrg{
+		margin-left:40px;
+	}
+	
+	.inner-spacer-right-lrg{
+		margin-right:40px;
+	}
+	
+	
+    /* END GENERAL STYLES */
+    
+    
+    /*------------------------------------------------------------------------*/
+    
+	.slideshow-wrap{
+		position:absolute;
+		z-index:99;
+		top:0;
+		left:0;
+		background-color:#000;
+	}
+	
+	.slideshow{
+		background-color:#000;
+	}
+	
+	a.skip{
+		width:80px;
+		height:40px;
+		display:block;
+		position:absolute;
+		z-index:100;
+		top:0;
+		left:50%;
+		margin-left:-40px;
+		opacity: 0;
+		-ms-filter: "alpha(opacity=0)";
+		background:url(../img/content/info.png) no-repeat;
+	}
+	
+	.desktop a.skip-intro.ready {
+		-webkit-transition: all 0.3s ease-out; 
+		   -moz-transition: all 0.3s ease-out; 
+			 -o-transition: all 0.3s ease-out; 
+				transition: all 0.3s ease-out;
+	}
+
+	.desktop a.skip-intro:hover {
+		opacity: 1 !important;
+	}
+
+	a.skip.disabled{
+		display:none;
+	}
+	
+	a.skip span{
+		line-height:10px;
+		font-size:10px;
+		width:60px;
+		height:30px;
+		margin-top:3px;
+		text-align:center;
+		font-weight:600;
+		color:#333;
+		display:block;
+		margin-left:8px;
+	}
+	
+	a.skip i{
+		width:80px;
+		height:30px;
+		display:block;
+		text-align:center;
+		font-size:12px;
+		color:#222;
+		margin-top:4px;
+	}
+	
+	a.skip:hover i{
+		cursor:pointer;
+	}
+	
+	.wrapper{
+		width:600px;
+		margin-left:auto;
+		margin-right:auto;
+		-ms-filter: "alpha(opacity=0)";
+		opacity:0;
+		visibility: hidden;
+		position:relative;
+	}
+	
+	.logo{
+		display:block;
+		text-align:center;
+		margin-top:10px;
+	}
+	
+	.logo > a{
+		opacity:1;
+		display:inline-block;
+	}
+	
+	.logo.visible > a{
+		opacity:1;
+	}
+	
+	.intro h1{
+		text-align:center;
+		font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		font-weight:400;
+		color:#84ccff;
+		margin-top:30px;
+		font-size:35px;
+	}
+
+	.ie8 .intro {
+		background-color: white;
+	}
+	
+	.intro p{
+		font-size:14px;
+		color:#ccc;
+		text-align:center;
+	}
+	
+	
+	/*social media icons*/
+   
+	.social-media{
+		position:relative;
+		text-align:center;
+		margin-left:-15px !important;
+		margin-top:20px;
+	}
+	
+	.social-media a{
+		font-size: 24px;
+		display: inline-block;
+		width: 25px;
+		height: 40px;
+		color:#999;
+		opacity:1;
+		line-height: 24px;
+		margin-right: 5px;
+		-webkit-transition: all 0.3s ease-out; 
+		   -moz-transition: all 0.3s ease-out; 
+			 -o-transition: all 0.3s ease-out; 
+				transition: all 0.3s ease-out;
+	}
+	
+	.social-media a:hover{
+		color:#84ccff;
+	}
+	
+	.more-link:hover{
+		color:#fff;
+	}
+	
+	.notify{
+		margin-top:10px;
+	}
+	
+	.notify h3{
+		font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		font-weight:400;
+		margin-bottom:0;
+		text-align:center;
+		text-transform:uppercase;
+		
+		font-size:14px;
+		color:#fff;
+		letter-spacing:normal;
+	}
+	
+	.peThemeContactForm{
+		overflow:hidden;
+		position:relative;
+		margin-bottom:0;
+	}
+	
+	.peThemeContactForm .control-group{
+		position:relative;
+		float:left;
+		width:99%;
+	}
+	
+	.form-wrap > div{
+		clear:both;
+	}
+	
+	.form-wrap input[type=text]{
+		width:500px;
+		margin-left:1px !important;
+		border-radius:0;
+		box-shadow:none;
+		min-height:40px;
+		font-size:12px;
+		color:#ccc;
+		background-color:#222;
+		border-color:#333;
+	}
+	
+	.form-wrap input[type=text]:focus{
+		border-color:#444;
+	}
+	
+	.form-wrap input[type=text].error{
+		border-color:#d95137;
+	}
+	
+	.form-wrap .control-label{
+		display:none;
+	}
+	
+	.form-wrap button#submit{
+		position:absolute;
+		right:0;
+		top:0;
+		float:left;
+		border-radius:0;
+		height:40px;
+		color:#fff;
+		background:#333;
+		border:none;
+		text-shadow:none;
+		text-transform:uppercase;
+		font-size:11px;
+		padding-left:15px;
+		padding-right:15px;
+		box-shadow:none;
+		-webkit-transition: all 0.3s ease-out; 
+		   -moz-transition: all 0.3s ease-out; 
+			 -o-transition: all 0.3s ease-out; 
+				transition: all 0.3s ease-out;
+	}
+	
+	.form-wrap button#submit:hover{
+		background-color:#fff;
+		color:#222;
+	}
+	
+	.formSent,
+	.formError{
+		display:none;
+		float:left;
+	}
+	
+	.form-wrap{
+		position:relative;
+	}
+	
+	#contactFormError,
+	#contactFormSent{
+		background:transparent;
+		text-shadow:none;
+		border:none;
+		position:relative;
+		line-height:14px;
+		margin-bottom:0;
+		padding:0;
+		padding-left:0;
+		text-align:center;
+		float:none;
+		margin-top:0px;
+	}
+	
+	#contactFormError{
+		color:#d95137;
+	}
+	
+	#contactFormSent{
+		color:#84ccff;
+	}
+   
+    /* iDevices */
+   
+    /*prevent auto adjustment of text size*/
+    .iDevices body,
+    .iDevices p,
+    .iDevices div,
+    .iDevices h1,
+    .iDevices h2,
+    .iDevices h3,
+    .iDevices h4,
+    .iDevices h5,
+    .iDevices h6 {
+		-webkit-text-size-adjust: none;
+    }
+	
+	.slideshow {
+		opacity: 0;
+		-ms-filter: "alpha(opacity=0)";
+	}
+	
+	.slideshow > div > div {
+		font-size: 1px;
+		line-height: 1px;
+	}
+	
+	
+	.ie8 .form-wrap #email{
+		height:30px !important;
+		min-height:30px;
+	}
+	
+	.ie8 .social-media a i{
+		opacity:1;
+		visibility:visible;
+		
+	}
+	
+	
+	
+	/*single color change selector*/
+	
+	a,
+	.intro h1,
+	.social-media a:hover,
+	#contactFormSent{
+		color:#498aff;
+	}
+	
+	/*change info page to white bg*/
+	body.ready {
+		background-color:#fff;
+	}
+	
+	.form-wrap input[type=text]{
+		background-color:#f6f6f6;
+		border-color:#ccc;
+	}
+	
+	.intro p{
+		color:#888;
+	}
+	
+	.form-wrap button#submit{
+		background-color:#eee;
+		color:#666;
+	}
+	
+	.form-wrap button#submit:hover{
+		background-color:#498aff;
+		color:#fff;
+	}
+	
+	.form-wrap input[type=text]:focus{
+		border-color:#498aff;
+	}
+

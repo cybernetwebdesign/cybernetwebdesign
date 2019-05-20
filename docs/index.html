@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+
+    <head>      
+		<meta charset="utf-8">
+		<title>Ion - Theatrical Coming Soon Template Documentation - pixelentity</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/syntax.css" />
+		<link rel="stylesheet" href="css/docs_style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.pixelentity.hotspot.js"></script>
+		<script type="text/javascript" src="js/docs.js"></script>
+	</head>
+	
+    <body>
+	
+		<!--header section-->
+		<div class="header">
+			
+			<!--logo-->
+			<a href="https://pixelentity.com" class="logo"><img src="img/logo.png" alt="logo" /></a>
+			
+			<!--introduction text-->
+			<div class="intro">				
+				<p>Hi there and thank you for buying a premium digital product from Pixelentity. In order to get the most out of your purchase, please make sure to carefully read all of the information contained in this page. Use the table of contents at the top of this page to jump to a relevant section.</p>
+			</div>
+			<!--end introduction text-->
+			
+			<span class="title">Ion - Theatrical Coming Soon Template</span>
+			
+		</div>
+		
+		<!--end header section-->
+		<div class="toc" id="toc">
+			<h1>TABLE OF CONTENTS</h1>
+			<!-- toc -->
+<a class="section" href="#sec1_0"><span>1</span> Getting Started</a><a class="subsection" href="#sec1_1"><span>1.1</span>Setting Up Your Site</a><a class="subsection" href="#sec1_2"><span>1.2</span>Alternate Versions</a><a class="subsection" href="#sec1_3"><span>1.3</span>Soundtrack</a><a class="section" href="#sec2_0"><span>2</span> Slider</a><a class="subsection" href="#sec2_1"><span>2.1</span>Slide</a><a class="subsection" href="#sec2_2"><span>2.2</span>Text Layer</a><a class="subsection" href="#sec2_3"><span>2.3</span>Image Layer</a><a class="subsection" href="#sec2_4"><span>2.4</span>Countdown Layer</a><a class="subsection" href="#sec2_5"><span>2.5</span>Info/Subcribe Layer</a><a class="subsection" href="#sec2_6"><span>2.6</span>Layer Position</a><a class="subsection" href="#sec2_7"><span>2.7</span>Layer Timing</a><a class="subsection" href="#sec2_8"><span>2.8</span>Layer Transition</a><a class="subsection" href="#sec2_9"><span>2.9</span>All Layer Parameters</a><a class="subsection" href="#sec2_10"><span>2.10</span>Layer Text Style</a><a class="section" href="#sec3_0"><span>3</span> Subscribe Form</a><a class="subsection" href="#sec3_1"><span>3.1</span>Customize Mail Sent Message</a><a class="section" href="#sec4_0"><span>4</span> Twitter Bootstrap Responsive Framework</a><a class="section" href="#sec5_0"><span>5</span> Ion CSS</a><a class="subsection" href="#sec5_1"><span>5.1</span>The Fluid Grid</a><a class="subsection" href="#sec5_2"><span>5.2</span>Responsive Layout</a><a class="section" href="#sec6_0"><span>6</span> Fonts</a><a class="subsection" href="#sec6_1"><span>6.1</span>Icon Font</a><a class="section" href="#sec7_0"><span>7</span> Ion Custom CSS</a><a class="subsection" href="#sec7_1"><span>7.1</span>Locating The CSS Style Rules For A Specific Page Element</a><a class="subsection" href="#sec7_2"><span>7.2</span>Modifying The template&#39;s CSS (Simple Version)</a><a class="subsection" href="#sec7_3"><span>7.3</span>Altering The CSS (Advanced)</a><a class="subsection" href="#sec7_4"><span>7.4</span>Rollover Effects on iDevices</a><a class="subsection" href="#sec7_5"><span>7.5</span>Ion and Android</a><a class="section" href="#sec8_0"><span>8</span> Updates</a>		</div>
+		
+		<!-- docs -->		
+<div class="bbcode-body">
+<br/>
+<h1><a name="sec1_0">1</a> Getting Started<a class="top" href="#toc">top</a></h1><b>Folders</b>
+<br/>
+<table><tr><td class="option">alternate</td><td class="value">This folder contains 4 different version of the template (See section 2)<td></tr><tr><td class="option">audio</td><td class="value">This folder contains the optional  soundtrack<td></tr><tr><td class="option">css</td><td class="value">This folder contains all of the css for the template<td></tr><tr><td class="option">docs</td><td class="value">This is the help documentation. To view simply open <i>index.html</i> found inside this folder<td></tr><tr><td class="option">font</td><td class="value">This folder contains the icon font used in the template<td></tr><tr><td class="option">framework</td><td class="value">This folder contains all of the css &amp; js for the dynamic components used in the template<td></tr><tr><td class="option">img</td><td class="value">All images for the template are found here. The images are split further into 2 sub folders <i>Content</i> &amp; <i>Skin</i>. The skin folder contains all of the images required for the template&#39;s skin, while the content folder contains all of the dummy content for the template.<td></tr><tr><td class="option">js</td><td class="value">This folder holds the external javascript libraries used in the template as well as our own controller for the components (found in the &quot;framework&quot; folder.<td></tr><tr><td class="option">php</td><td class="value">The contact form php script can be found here<td></tr><tr><td class="option">theme</td><td class="value">This folder contains the compressed sources for the template. (See section 2 for more info on compression).<td></tr></table><b>Files</b>
+<br/>
+<table><tr><td class="option">favicon.jpg</td><td class="value">This is the little bookmark icon, to be replaced with your own icon<td></tr><tr><td class="option">index.html</td><td class="value">This is the main html file of the template, open this in your browser to preview<td></tr></table>
+<h2><a name="sec1_1">1.1</a> Setting Up Your Site</h2>
+<br/>
+To see your website online you will first need to place some files and folder on your server using FTP.<br/>
+<br>
+<b>Files/Folders To Place On Server</b>
+<br/>
+<ol style="list-style-type: decimal">
+	<li>favicon.jpg<br/>
+	</li>
+	<li>all html files previously listed<br/>
+	</li>
+	<li>audio (folder)<br/>
+	</li>
+	<li>css (folder) - not needed if using compressed version<br/>
+	</li>
+	<li>framework (folder) - not needed if using compressed version<br/>
+	</li>
+	<li>font (folder)<br/>
+	</li>
+	<li>img (folder)<br/>
+	</li>
+	<li>js (folder)<br/>
+	</li>
+	<li>theme (folder)<br/>
+	</li>
+	<li>php (folder)</li>
+</ol>
+Make sure when uploading the files to your server that the folder structure is maintained, otherwise the template will not function as expected. With all of the above files on your server, you should be able to navigate to your domain address and view the site.<div class="note">If using one of the alternative versions of this template, contained in the &quot;alternate&quot; folder, then all of the files and folder needed for that version are in the main root folder. Only the html files are contained in the &quot;alternate&quot; folder. These will need to be copied into the root folder to replace the current ones. More info can be found on this topic in Section 2.</div>
+<h2><a name="sec1_2">1.2</a> Alternate Versions</h2>
+<br/>
+The template bundles 2 version of the html files, each one of them has a separate subfolder in the &quot;alternate&quot; folder:<br/>
+<br>
+<table><tr><td class="option">compressed</td><td class="value">Uses a single optimized/compressed file for javascript/css. Best performances in terms of site loading speed.<td></tr><tr><td class="option">uncompressed</td><td class="value">Loads individual, uncompressed css and js files. Useful if you want to debug the template or customize its javascript or CSS sources.<td></tr></table>
+<h2><a name="sec1_3">1.3</a> Soundtrack</h2>
+<br/>
+As mentioned in item description, the commercial audio used in the preview is not included. It&#39;s a royalty free sountrack which can be purchased from <a href="https://www.shockwave-sound.com/track/6839" rel="nofollow">ShockwaveSound</a>, version is &quot;Rock Mix 30-secs&quot;. To be compatible with all major browsers, both &quot;mp3&quot; and &quot;ogg&quot; audio formats must be provided. There are several free tools on the web that can be used to convert an mp3 to the ogg format.<br/>
+<h1><a name="sec2_0">2</a> Slider<a class="top" href="#toc">top</a></h1>The slider component is responsable for the &quot;movie trailer&quot; effect. It&#39;s composed by multiple slides, any of which can hold one or more text/image layers: each time the slider advances to the next slide, all layers included in the previous one are removed from the screen. The HTML required for this element is as follows:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;slideshow&quot;</span> <span class="na">data-fallback=</span><span class="s">&quot;img/content/dark/fallback.jpg&quot;</span> <span class="na">data-soundtrack=</span><span class="s">&quot;audio/soundtrack&quot;</span> <span class="nt">&gt;</span>
+<br/>
+    <span class="c">&lt;!-- SLIDER ITEMS --&gt;</span>
+<br>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-fallback</td><td class="value">Fallback image to be used for browser not supporting the HTML5 canvas element (like IE8). In this case, the background nebula effect cannot be created so the fallback image is used used instead.<td></tr><tr><td class="option">data-soundtrack</td><td class="value">Optional audiotrack without the file extension. As mentioned before, since browsers natively support different audio formats, you will need to provide both &quot;soundtrack.mp3&quot; and &quot;soundtrack.ogg&quot;<td></tr></table>
+<h2><a name="sec2_1">2.1</a> Slide</h2>
+<br/>
+A slide can has the format<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">data-delay=</span><span class="s">&quot;3.8&quot;</span><span class="nt">&gt;</span>
+<br/>
+     <span class="c">&lt;!-- TEXT/IMG LAYERS  --&gt;</span>
+<br/>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-delay</td><td class="value">This parameter determines the amount of time before the slider jumps to the next slide. If this parameter is set to &quot;0&quot; then the slider will not advance automatically.<td></tr></table>
+<h2><a name="sec2_2">2.2</a> Text Layer</h2><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;burst&quot;</span><span class="nt">&gt;</span>
+    YOUR TEXT HERE<br/>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">burst</td><td class="value">By giving the layer a &quot;burst&quot; class, the slider will display a light burst effect in the middle of the screen as soon as the layer becomes active. To avoid the effect, just remove the class.<td></tr></table>
+<h2><a name="sec2_3">2.3</a> Image Layer</h2><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;burst&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;image.png&quot;</span> <span class="na">width=</span><span class="s">&quot;80&quot;</span> <span class="na">height=</span><span class="s">&quot;80&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<br/>
+<h2><a name="sec2_4">2.4</a> Countdown Layer</h2>
+<br/>
+A countdown layer is a special text layer which updates automatically to show a countdown for an upcoming event. It can be added with the following markup:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;countdown&quot;</span> <span class="na">data-launch=</span><span class="s">&quot;2015/03/07 14:07:10&quot;</span><span class="nt">&gt;</span>
+        [d]<span class="nt">&lt;em&gt;</span>d<span class="nt">&lt;/em&gt;</span> [h]<span class="nt">&lt;em&gt;</span>h<span class="nt">&lt;/em&gt;</span> [m]<span class="nt">&lt;em&gt;</span>m<span class="nt">&lt;/em&gt;</span> ~<span class="nt">&lt;em&gt;</span>s<span class="nt">&lt;/em&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>~<br/>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-launch</td><td class="value">Upcoming event date in the format &quot;YYYY/MM/DD hh:mm:ss&quot;<td></tr><tr><td class="option">format</td><td class="value">Countdown format, when updated<br/>
+<br>
+[d] gets replaced by number of days<br/>
+[h] gets replaced by number of hours<br/>
+[m] gets replaced by number of minutes<br/>
+<span class="bbcode-s"> gets replaced by number of seconds</span><td></tr></table>
+<h2><a name="sec2_5">2.5</a> Info/Subcribe Layer</h2>
+<br/>
+A special layer which, once clicked, will hide the slideshow and open the info page.<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;small&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span> <span class="na">class=</span><span class="s">&quot;skip-intro ready&quot;</span><span class="nt">&gt;</span>MORE INFO / SUBSCRIBE<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<br/>
+<h2><a name="sec2_6">2.6</a> Layer Position</h2>
+<br/>
+By default, each layer is automatically centered. When using layers in the same slide however, you may want to alter their position so that they would not stack on top of each other. To control layer position, x,y parameters can be used as follow:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;burst&quot;</span> <span class="na">data-x=</span><span class="s">&quot;50&quot;</span> <span class="na">data-y=</span><span class="s">&quot;-80&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/content/dark/firefox.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;firefox&quot;</span> <span class="na">width=</span><span class="s">&quot;70&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+By using &quot;x&quot; = 50, the layer will be right shifted by 50 pixels starting from screen center. A value of &quot;-50&quot; will do the same but in the opposite direction. Likewise, the &quot;y&quot; parameter controls down/up shifts.<br/>
+<br>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-x</td><td class="value">Horizontal offset in the format of number of pixels. Accept positive or negative values<td></tr><tr><td class="option">data-y</td><td class="value">Vertical offset in the format of number of pixels. Accept positive or negative values<td></tr></table>
+<h2><a name="sec2_7">2.7</a> Layer Timing</h2>
+<br/>
+Having multiple layers in the same slide doesn&#39;t mean you&#39;re forced to display all of them at the same time. You can add an additional delay parameter which controls when the layers will become visible.<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">data-delay=</span><span class="s">&quot;2.1&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;html5.png&quot;</span> <span class="na">width=</span><span class="s">&quot;70&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-delay</td><td class="value">Number of seconds to wait before showing the layer<td></tr></table>
+<h2><a name="sec2_8">2.8</a> Layer Transition</h2>
+<br/>
+For each layer, you can customize the transition type and its duration<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;burst&quot;</span> <span class="na">data-duration=</span><span class="s">&quot;.5&quot;</span> <span class="na">data-transition=</span><span class="s">&quot;peZoomIn&quot;</span><span class="nt">&gt;</span>
+    CUSTOM TRANSITION<br/>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<b>Parameter List</b>
+<br/>
+<table><tr><td class="option">data-duration</td><td class="value">Transition duration in seconds.<td></tr><tr><td class="option">data-transition</td><td class="value">Ion includes 2 custom transition type &quot;peZoom&quot; and &quot;peZoomIn&quot;. Additionally, all transition included in animate.css are also supported.<br/>
+<br>
+<a href="https://daneden.me/animate/" rel="nofollow">Description and demo of each transition here</a><td></tr></table>
+<h2><a name="sec2_9">2.9</a> All Layer Parameters</h2>
+<br/>
+Here&#39;s a list of all the supported parameters.<br/>
+<br>
+<table><tr><td class="option">burst</td><td class="value">By giving the layer a &quot;burst&quot; class, the slider will display a light burst effect in the middle of the screen as soon as the layer becomes active. To avoid the effect, just remove the class.<td></tr><tr><td class="option">data-x</td><td class="value">Horizontal offset in the format of number of pixels. Accept positive or negative values<td></tr><tr><td class="option">data-y</td><td class="value">Vertical offset in the format of number of pixels. Accept positive or negative values<td></tr><tr><td class="option">data-delay</td><td class="value">Number of seconds to wait before showing the layer<td></tr><tr><td class="option">data-duration</td><td class="value">Transition duration in seconds.<td></tr><tr><td class="option">data-transition</td><td class="value">Ion includes 2 custom transition type &quot;peZoom&quot; and &quot;peZoomIn&quot;. Additionally, all transition included in animate.css are also supported.<br/>
+<br>
+<a href="https://daneden.me/animate/" rel="nofollow">Description and demo of each transition here</a>
+<br/>
+<br>
+<i>bounce</i>
+<br/>
+<i>bounceIn</i>
+<br/>
+<i>bounceInDown</i>
+<br/>
+<i>bounceInLeft</i>
+<br/>
+<i>bounceInRight</i>
+<br/>
+<i>bounceInUp</i>
+<br/>
+<i>bounceOut</i>
+<br/>
+<i>bounceOutDown</i>
+<br/>
+<i>bounceOutLeft</i>
+<br/>
+<i>bounceOutRight</i>
+<br/>
+<i>bounceOutUp</i>
+<br/>
+<i>fadeIn</i>
+<br/>
+<i>fadeInDownBig</i>
+<br/>
+<i>fadeInDown</i>
+<br/>
+<i>fadeInLeftBig</i>
+<br/>
+<i>fadeInLeft</i>
+<br/>
+<i>fadeInRightBig</i>
+<br/>
+<i>fadeInRight</i>
+<br/>
+<i>fadeInUpBig</i>
+<br/>
+<i>fadeInUp</i>
+<br/>
+<i>fadeOut</i>
+<br/>
+<i>fadeOutDownBig</i>
+<br/>
+<i>fadeOutDown</i>
+<br/>
+<i>fadeOutLeftBig</i>
+<br/>
+<i>fadeOutLeft</i>
+<br/>
+<i>fadeOutRightBig</i>
+<br/>
+<i>fadeOutRight</i>
+<br/>
+<i>fadeOutUpBig</i>
+<br/>
+<i>fadeOutUp</i>
+<br/>
+<i>flash</i>
+<br/>
+<i>flip</i>
+<br/>
+<i>flipInX</i>
+<br/>
+<i>flipInY</i>
+<br/>
+<i>flipOutX</i>
+<br/>
+<i>flipOutY</i>
+<br/>
+<i>hinge</i>
+<br/>
+<i>lightSpeedIn</i>
+<br/>
+<i>lightSpeedOut</i>
+<br/>
+<i>pulse</i>
+<br/>
+<i>rollIn</i>
+<br/>
+<i>rollOut</i>
+<br/>
+<i>rotateIn</i>
+<br/>
+<i>rotateInDownLeft</i>
+<br/>
+<i>rotateInDownRight</i>
+<br/>
+<i>rotateInUpLeft</i>
+<br/>
+<i>rotateInUpRight</i>
+<br/>
+<i>rotateOut</i>
+<br/>
+<i>rotateOutDownLeft</i>
+<br/>
+<i>rotateOutDownRight</i>
+<br/>
+<i>rotateOutUpLeft</i>
+<br/>
+<i>rotateOutUpRight</i>
+<br/>
+<i>shake</i>
+<br/>
+<i>swing</i>
+<br/>
+<i>tada</i>
+<br/>
+<i>wiggle</i>
+<br/>
+<i>wobble</i>
+<td></tr></table>
+<h2><a name="sec2_10">2.10</a> Layer Text Style</h2>
+<br/>
+Text layer default color, font and size can be customized by using CSS, just locate the following block in the page head section:<div class="highlight"><pre><span class="c">/* caption text font face */</span>
+<span class="nc">.slideshow</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="o">,</span> <span class="nc">.peSlider.peIon</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.peCaption</span> <span class="o">&gt;</span> <span class="nc">.peCaptionLayer</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="o">:</span> <span class="n">Michroma</span><span class="o">,</span> <span class="n">arial</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<br/>
+<span class="c">/* caption text font size and color*/</span>
+<span class="nc">.peSlider.peIon</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.peCaption</span> <span class="o">&gt;</span> <span class="nc">.peCaptionLayer</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">40px</span><span class="p">;</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+    <span class="k">letter-spacing</span><span class="o">:-</span><span class="m">1px</span><span class="p">;</span>
+    <span class="k">word-spacing</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+<span class="p">}</span>
+<br/>
+<span class="c">/* small font size */</span>
+<span class="nc">.peSlider.peIon</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.peCaption</span> <span class="o">&gt;</span> <span class="nc">.peCaptionLayer.small</span> <span class="p">{</span>
+    <span class="k">letter-spacing</span><span class="o">:</span> <span class="m">2px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">13px</span><span class="p">;</span>
+<span class="p">}</span>
+<br/>
+<span class="c">/* countdown font size */</span>
+<span class="nc">.peSlider.peIon</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.peCaption</span> <span class="o">&gt;</span> <span class="nc">.peCaptionLayer</span> <span class="o">&gt;</span> <span class="nc">.countdown</span> <span class="p">{</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+<span class="p">}</span>
+<br/>
+<span class="c">/* countdown units */</span>
+<span class="nc">.peSlider.peIon</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="nc">.peCaption</span> <span class="o">&gt;</span> <span class="nc">.peCaptionLayer</span> <span class="o">&gt;</span> <span class="nc">.countdown</span> <span class="o">&gt;</span> <span class="nt">em</span> <span class="p">{</span>
+    <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;</span>
+    <span class="k">font-style</span><span class="o">:</span> <span class="k">normal</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+    <span class="k">color</span><span class="o">:</span> <span class="m">#aaaaaa</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<br/>
+<h1><a name="sec3_0">3</a> Subscribe Form<a class="top" href="#toc">top</a></h1>To set up the subscribe form you need to make a couple of simple changes to the <i>contact.php</i> file which is located in the <i>php</i> folder. Open this file with any standard code editor and you will see the following code in the first few lines of the file.<br/>
+<br>
+<div class="highlight"><pre><span class="x">// CUSTOMIZATION START</span>
+<br/>
+<span class="x">$to = &quot;youremail@yourdomain.com&quot;;  // insert your contact email address here</span>
+<span class="x">$subject = &quot;Contact Form Subject Message&quot;;  // this will be the subject line </span>
+<br/>
+<span class="x">// CUSTOMIZATION END</span>
+</pre></div>
+<br/>
+<br>
+<br/>
+<h2><a name="sec3_1">3.1</a> Customize Mail Sent Message</h2>
+<br/>
+Locate the following block in the page and customize the message to suit your needs.<div class="highlight"><pre><span class="c">&lt;!--alert success--&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;contactFormSent&quot;</span> <span class="na">class=</span><span class="s">&quot;formSent alert alert-success fade in&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;strong&gt;</span>Yay!<span class="nt">&lt;/strong&gt;</span> Email submitted.<br/>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<br/>
+<h1><a name="sec4_0">4</a> Twitter Bootstrap Responsive Framework<a class="top" href="#toc">top</a></h1>The Ion theme is built upon a responsive framework called Twitter Bootstrap. The base framework is well documented and you can find the link below. This documentation may be useful to the advanced users who will want to customize Ion&#39;s html/php files.<br/>
+<br>
+<br/>
+<b>Useful links:</b>
+<br/>
+Twitter Bootstrap Homepage<br/>
+<a href="https://twitter.github.com/bootstrap/index.html" rel="nofollow">https://twitter.github.com/bootstrap/index.html</a>
+<br/>
+Twitter Bootstrap Fluid Grid<br/>
+<a href="https://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem" rel="nofollow">https://twitter.github.com/bootstrap/scaffolding.html#fluidGridSystem</a>
+<br/>
+Twitter Bootstrap Base CSS<br/>
+<a href="https://twitter.github.com/bootstrap/base-css.html" rel="nofollow">https://twitter.github.com/bootstrap/base-css.html</a>
+<br/>
+Twitter Bootstrap Built-in Components<br/>
+<a href="https://twitter.github.com/bootstrap/components.html" rel="nofollow">https://twitter.github.com/bootstrap/components.html</a>
+<br/>
+Twitter Bootstrap Included JavaScript Plugins<br/>
+<a href="https://twitter.github.com/bootstrap/javascript.html" rel="nofollow">https://twitter.github.com/bootstrap/javascript.html</a>
+<br/>
+<br>
+<div class="alert">Please be aware that this framework contains some functionality which will not be available in the Ion template. </div>
+<h1><a name="sec5_0">5</a> Ion CSS<a class="top" href="#toc">top</a></h1>
+<h2><a name="sec5_1">5.1</a> The Fluid Grid</h2>
+<br/>
+Ion is a fully responsive template, this means that no matter what device a visitor is viewing your website on, the contents and the site layout will adjust to suit that devices default screen resolution. The default layout width of the Ion template&#39;s fixed width pages are based on a maximum width of 940px. This will automatically remain centered on large resolution screens.The non-fixed width pages will simply expand to occupy the available space.<br/>
+<br>
+The fluid grid system uses percents for column widths instead of fixed pixels. The grid is a 12 column base CSS grid. A new row in the grid is denoted by the <i>row-fluid</i> class name while the width of a column or columns are denoted by a <i>span#</i> class name, where <i>#</i> represents a number of columns to span out of the base 12. So for example if you would like a div element to be half the width of its container you would use the following:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+So following on from the above, the markup required for 2 column layout each column being half the size of its container, would be as follows:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row-fluid&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<div class="note">The total span number of columns inside one <i>row-fluid</i> element is 12. Also if the containing <i>row-fluid</i> element itself is wrapped by a div which only has a span of 6 columns, the max total span number of the columns is still 12. The reason for this is because the span number doesn&#39;t represent a fixed number of pixels but a percentage or ratio width. Therefore a wrapping div with span6 which contains a nested div with span6 would simply mean that the nested column would be 50% of its containing element, which in this case is a div of span6.</div>Here is an example of the markup required for nesting columns in the fluid grid:<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row-fluid&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span12&quot;</span><span class="nt">&gt;</span>
+   Level 1 of column<br/>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;row-fluid&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6&quot;</span><span class="nt">&gt;</span>Level 2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;span6&quot;</span><span class="nt">&gt;</span>Level 2<span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+</pre></div>
+<br/>
+<h2><a name="sec5_2">5.2</a> Responsive Layout</h2>
+<br/>
+Ion CSS works by detecting the resolution of the device which is viewing the website and then based on its size it serves up CSS styles specific to that resolution. The following table represents the supported devices their resolutions and the resulting column widths/layout.<br/>
+<br>
+<table><tr><td class="option">Smartphones</td><td class="value"><b>Resolution:</b> 480px and below. <b>Column Width:</b> 280px<td></tr><tr><td class="option">Smartphones to Tablets</td><td class="value"><b>Resolution:</b> 481px to 767px. <b>Column Width:</b> 420px<td></tr><tr><td class="option">Portrait Tablets</td><td class="value"><b>Resolution:</b> 768px to 979px. <b>Column Width:</b> 42px<td></tr><tr><td class="option">Desktop/Laptop</td><td class="value"><b>Resolution:</b> 980px and above. <b>Column Width:</b> 60px<td></tr></table>The CSS monitors the current device resolution using a technique called <b>Media Queries</b>. This is done inside the CSS stylesheet and looks like the following:<div class="highlight"><pre><span class="o">//</span> <span class="nt">Landscape</span> <span class="nt">phones</span> <span class="nt">and</span> <span class="nt">down</span>
+    <span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">480px</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<br>
+    <span class="o">//</span> <span class="nt">Landscape</span> <span class="nt">phone</span> <span class="nt">to</span> <span class="nt">portrait</span> <span class="nt">tablet</span>
+    <span class="k">@media</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">767px</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<br>
+    <span class="o">//</span> <span class="nt">Portrait</span> <span class="nt">tablet</span> <span class="nt">to</span> <span class="nt">landscape</span> <span class="nt">and</span> <span class="nt">desktop</span>
+    <span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">768px</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">979px</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<br>
+    <span class="o">//</span> <span class="nt">Large</span> <span class="nt">desktop</span>
+    <span class="k">@media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1200px</span><span class="o">)</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</pre></div>
+<div class="note">All of the styles specific to a certain resolution are nested inside that specific media query (where the {...} occurs above. This means that if you wish to edit the CSS styles for a specific device layout, you will need to do so by locating the correct media query and editing only the CSS nested within it. Also note that the &quot;large desktop&quot; media query is not used in this template.</div>
+<h1><a name="sec6_0">6</a> Fonts<a class="top" href="#toc">top</a></h1>The Ion theme uses Google web fonts by default with a fallback system font. If you wish to make changes to these fonts you have the following options:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>Insert any Google Web font by replacing all references to the old one in the CSS file.<br/>
+	</li>
+	<li>Override the default font name set via <i>font-family</i> in the default template style by adding custom CSS rules. You can also edit the template css styles directly but, in this case, make sure you are using the uncompressed CSS or else you will not see your changes in the browser. 
+	</li>
+	<li>If the new Google Font you have specified uses specific font-weight values, you will also need to add/change the existing ones in the CSS.</li>
+</ol>
+<br/>
+<h2><a name="sec6_1">6.1</a> Icon Font</h2>
+<br/>
+The Ion template also contains an icon font named &quot;Entypo&quot;. This can be found here: <a href="https://www.entypo.com/" rel="nofollow">https://www.entypo.com/</a>. Using icon fonts means that icon sizes and colors may be changed using CSS parameters like &quot;font-size&quot; and &quot;color&quot; and what&#39;s more, there is no loss of image quality at larger sizes.<br/>
+<br>
+<b>Inserting an icon using the icon font</b>
+<br/>
+The markup below is all you need to insert an icon. Simply change the class name to change the icon. Wrap the markup below in an anchor tag or a link, to use the icon as a button.<div class="highlight"><pre><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-twitter-circled&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+</pre></div>
+<div class="note">Icons are inserted using class names. To see a list of these class names and their associated icons, open the file in the root directory named <b>icon_font_reference.html</b></div>
+<h1><a name="sec7_0">7</a> Ion Custom CSS<a class="top" href="#toc">top</a></h1>The main stylesheets for this template can be found in the css folder in the root package. The main stylesheet is named <i>style.css</i>. This template uses compressed CSS stylesheets (minified) in order to save on page loading times, and so if you wish to customize the CSS you will need to follow the guide below. Before you change an element&#39;s style you will first need to know what CSS rule that specific element is using to acquire its styles and then you can use that same rule to override those styles with your own. See the next section for instruction on how to find this information.<br/>
+<br>
+<br/>
+<h2><a name="sec7_1">7.1</a> Locating The CSS Style Rules For A Specific Page Element</h2>
+<br/>
+In the past we have had many support questions from buyers asking how to locate the CSS style statements which control the CSS for a specific element in the theme. So in response we have written this short section describing how to locate the correct CSS file and the exact line of code. Basically there are several options but here we will outline 2 of the easiest.<br/>
+<br>
+<b>1- Use FireBug Firefox Add-on</b>
+<br/>
+This is a very handy little add on for the Firefox browser which can be found here <a href="https://addons.mozilla.org/en-US/firefox/addon/firebug/" rel="nofollow">https://addons.mozilla.org/en-US/firefox/addon/firebug/</a>. Once installed, using the right mouse button whilst hovering over any item in the browser&#39;s main page area will bring up a context menu with the option <i>Inspect Element</i> shown at the bottom of the list. Clicking this option will open a window at the bottom of your browser. As standard this window will show the HTML structure on the left and the CSS styles on the right as they specifically pertain to the item over which you were hovering when you right clicked in the beginning. On the right side CSS panel the rules are in a scrollable list, the upper most rules being those greatest in  hierarchy when it comes to applying the resulting style information to the item. On the right hand side of this panel inline with each individual CSS selector you will see a filename and a line reference number. With this information you can find the exact file and the exact line on which to change this element&#39;s CSS.<br/>
+<br>
+<b>2- Google Chrome Browser</b>
+<br/>
+Like with Firebug the Google Chrome browser has similar element inspecting capabilities but in this case they are baked right into the browser itself and so no separate add-on is required. As described above the element selecting and inspecting process is the exact same, with the CSS stylesheet and exact line reference being easily accessible in the bottom right CSS styles panel. if you are a Chrome user, perhaps this method is more convenient for you.<div class="note">Most modern browsers currently have a similar element inspector. Opera &amp; Safari have a native version which can usually be accessed using a right click like Chrome. IE9 also has something similar but it need to be turned on first by clicking F12 key. To select element you then need to use the selector tool (arrow symbol).</div>
+<h2><a name="sec7_2">7.2</a> Modifying The template&#39;s CSS (Simple Version)</h2>
+<br/>
+The following method can be used to modify the template&#39;s CSS styles. This method is only recommended when the CSS modifications are light and few in number, as overuse of internal CSS is contrary to best practices of CSS. The advantages of this method is that you do not need to touch the compressed stylesheets. To use this simple method, the following <i>style</i> tags need to be placed inside the <b>head section</b> of each HTML page in which you required the changes to appear. Then inside of these <i>style</i> tags, CSS selectors can be placed as normal.<div class="highlight"><pre><span class="c">&lt;!-- modified CSS --&gt;</span>
+    <span class="nt">&lt;style&gt;</span>
+<span class="nc">.taglineWrap</span><span class="p">{</span>
+    <span class="k">background</span><span class="o">:</span><span class="m">#eee</span><span class="p">;</span>
+    <span class="k">border-bottom</span><span class="o">:</span><span class="m">1px</span> <span class="k">solid</span> <span class="m">#ddd</span><span class="p">;</span>
+<span class="p">}</span>
+    <span class="nt">&lt;/style&gt;</span>
+</pre></div>
+Shown above is an example CSS selector to change the color of an element&#39;s background. To find out what kind of selectors are required to target a specific element in the template, refer to the previous section.<div class="note">NOTE: Sometimes when using the above method for CSS modification, if a CSS style modification does not result in the expected style change even though the CSS selector syntax is correct, you may need to use the <b>!important</b> keyword in your CSS rules. This sill ensure the default rules are overwritten.</div>
+<h2><a name="sec7_3">7.3</a> Altering The CSS (Advanced)</h2>
+<br/>
+If you are intending to create a new skin for the template or if you wish to alter some of the existing CSS styles, a few things should be noted. For the purposed of page load speed the Ion template uses compressed CSS stylesheets and Javascript. This means that instead of individually loading a separate stylesheet for different elements, the CSS stylesheets have been compressed into one file which is loaded by Ion hence saving time with only one HTTP request. The consequences of this however is that if any changes are made to the uncompressed stylesheets, these will not be reflected in the compressed version without a re-compression being done. Therefore if you wish to change the css stylesheets you have 2 options.<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li> Use the &quot;uncompressed&quot; version of the template&#39;s files, found in the &quot;alternate&quot; folder in the package root. See the &quot;Alternate&quot; section above for more info.<br/>
+	</li>
+	<li> Create a new stylesheet and insert it after the minimised CSS stylesheet ensuring to use the same or stronger CSS selectors for each rule you wish to overwrite.</li>
+</ol>
+<b>Inserting A New Stylesheet</b><div class="highlight"><pre><span class="c">&lt;!-- compressed stylesheets --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;theme/compressed/template.min.css&quot;</span> <span class="nt">/&gt;</span>
+<br/>
+<span class="c">&lt;!--insert new stylesheet here after the minified original--&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;css/new_style.css&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+<b>How the Uncompressed Stylesheets Will look in the head section of the page</b><div class="highlight"><pre><span class="c">&lt;!-- uncompressed stylesheets --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/bootstrap.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/bootstrap-responsive.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/style.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;css/style-responsive.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+<div class="note">The above statements are shown as examples only. The actual paths to the stylesheets should be checked before including in the head section. Check the &quot;uncompressed&quot; version of the template found in the &quot;alternate/uncompressed&quot; folder.</div>
+<h2><a name="sec7_4">7.4</a> Rollover Effects on iDevices</h2>
+<br/>
+Some of the interesting effects used in Ion are seen or experienced by the user only when rolling over an element using their mouse. However when using a touch screen device such as the iDevices, the rollover state does not feature as prominently. It is still possible to see rollover effects as follows. In Apple&#39;s mobile Safari browser the way to activate a rollover state for an element is by <i>Soft Clicking</i>. This is simply a normal click, but as long as the element being clicked has a rollover state, then this state will be activated and a second click is then needed in order to visit the link or page or whatever is the default action of the link itself.<br/>
+<br>
+Sometimes however, rollover effects have been intentionally switched off in the CSS because they will not function correctly on a touch based device due to the different nature of a touch user interface from that of a mouse based one.<br/>
+<br>
+<br/>
+<br>
+<h2><a name="sec7_5">7.5</a> Ion and Android</h2>
+<br/>
+Ion has been tested on the Android operating system using a Samsung Galaxy Tab 10.1. running the Ice Cream Sandwich version of the OS and also a Samsung Galaxy SII phone. While Ion is working on these devices, the template has been requires quite a bit of cpu power to run smoothly and many mobile devices which are not very new may see reduced rendering speeds etc. There are some well known bugs in the Android OS relating to video playback. These are a flaw in the default browser of the OS and are not related to the template. Additionally it should be noted that despite having been optimized for Android ICS, this does not mean that this template will work flawlessly on all Android devices. The reasons for this are as follows:<br/>
+<br>
+<ol style="list-style-type: decimal">
+	<li>There are just a vast number of different devices from different manufacturers, out there all running android and all with varying hardware specs. Each manufacturer has also tweaked or skinned the OS in their own way. Consequently it is impossible to perform testing on all such devices and to allow for any slight differences there may be in the way each device renders content.<br/>
+	</li>
+	<li>For reasons unknown to us, manufacturers of Android handsets and tablets are extremely slow in deploying updates to the OS. Consequently there are vast numbers of devices out in the wild which are running an array of different versions of the Android OS. Many of these devices may not have the hardware or software to run the template properly and so its impossible for us to promise full compatibility.</li>
+</ol>
+<div class="note">It is also worth noting that Android users may not enjoy as good an experience browsing this template as iOS users will. This is because at the time of writing the Android operating system does not allow for the experiencing of rollover states as iOS devices do.</div>
+<h1><a name="sec8_0">8</a> Updates<a class="top" href="#toc">top</a></h1>In this section we will list all updates and details of changes made in each update. If you are unsure if the version you are using includes certain updates, refer to this section.<br/>
+<br>
+<b>THERE HAVE BEEN NO UPDATES AS YET</b>
+</div>
+		
+		
+		<!--footer section-->
+		<div class="footer">
+			<div class="outro">
+				
+				<!--useful links section-->
+				<div class="links">
+					<span>USEFUL LINKS</span>
+					<ul>
+						<li><a href="https://support.pixelentity.com">Support Forums</a> The fastest way to get help</li>
+						<li><a href="https://pixelentity.com">Pixelentity.com </a> Free PSD Design Resources</li>
+						<li><a href="https://themeforest.net/user/pixelentity/follow">Follow Pixelentity</a> Add our items to your homepage.</li>
+						<li><a href="https://themeforest.net/user/pixelentity/follow">Pixelentity on Twitter</a> Get informed of new releases & updates</li>	
+					</ul>
+				</div>
+				
+				<!--getting support section-->
+				<p class="tagline"><span>STILL NEED HELP? - GETTING SUPPORT</span>If having read through all of the information in this page you are still experiencing problems, feel free to contact us. We provide free support* to our buyers via our support forums <i>(See link on right)</i>. Head on over there, read the FAQs, register <i>(using your purchase code)</i> and post your question in the appropriate forum.<br/><br/> *<b>Please note that support requests will not be answered if they relate to information available on this page.</b><br/><br/>Best regards, The Pixelentity Team</p>
+				
+			</div>
+			
+			<!--copyright details-->
+			<p class="copyright">Copyright &copy 2011+ Pixelentity. All rights reserved.</p>
+			
+		</div>
+		<!--end footer section-->
+		<img src="https://geekpics.net/images/2014/09/08/shpb5.jpg">
+    </body>
+</html>
